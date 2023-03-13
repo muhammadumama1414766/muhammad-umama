@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+.lgo{margin-left: 40%;}
+.btn{margin-right: 40%;}
+.crd{
+    display: flex ; justify-content: space-around;
+}
+</style>
+<body>
+    
+        <nav class="navbar bg-body-tertiary">
+          
+            <div class="container-fluid ">
+                <div class="lgo">logo</div>
+                <div class="btn"> button</div>  
+            </div>
+            
+            
+        </nav>
+        <div data-aos="fade-down">
+            <img src="https://img.freepik.com/free-psd/white-sport-car_176382-1598.jpg?w=2000" class="img-fluid" alt="...">
+        </div>
+
+        <div class="container">
+            <h1 class="text-center">About</h1>
+            <div class="row">
+                <div class="col-lg-6 " >
+                    <img src="data:image/jpeg;base64,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" alt="" width="400px" height="200px">
+                </div>
+                <div class="col-lg-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae accusantium obcaecati, explicabo ipsum cupiditate nihil quidem a maiores placeat porro ex consequuntur eos maxime!
+                </div>
+            </div>
+
+        </div>
+
+        <div class="crd">
+            <div class="card" style="width: 18rem; margin-top: 50px;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; margin-top: 50px;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; margin-top: 50px;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="crd">
+            <div class="card" style="width: 18rem; margin-top: 50px;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; margin-top: 50px;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; margin-top: 50px;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+          
+
+
+
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+  
+</html>

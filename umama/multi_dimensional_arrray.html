@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table</h1>
+    <table border=3>
+<tr>
+    <th>ID</th>   
+    <th>Name</th>   
+    <th>Salary</th>
+    <th>Department</th>   
+</tr>
+<tr>
+    <td>Emp01</td>
+    <td>saad</td>
+    <td>$1000</td>
+    <td>IT</td>
+
+</tr>
+<tr>
+    <td>Emp02</td>
+    <td>fahad</td>
+    <td>$1200</td>
+    <td>network</td>
+</tr>
+<tr>
+    <td>Emp03</td>
+    <td>mahad</td>
+    <td>$5000</td>
+    <td>full dtack Developer</td>
+</tr>
+    </table>
+    <br> <br>
+
+    <script>
+    var emp_info = [["Emp01","saad","$1000","IT"],
+    ["Emp02","fahad","$1200","network"],
+    ["Emp03","mahad","$5000","full stack Developer"]]
+
+    document.write(
+        "<table border=9> <tr> <th> ID </th> <th> Name </th> <th> Salary </th> <th> Department </th> </tr>"
+    )
+    for(var i = 0; i < emp_info.length; i++ ){
+        document.write ("<tr>")
+    
+    for (var j= 0; j<=3; j++)
+        document.write("<td>" +  emp_info [i] [j] + "</td>")
+        document.write("</tr>")
+    }
+    document.write("</table>")
+    </script>
+</body>
+</html>

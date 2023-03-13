@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+*{background-color: skyblue;}
+.adf{border: 2px solidd;
+width: 20%;
+height:50% ;
+}
+</style>
+<body>
+  <div class="adf">
+    <label for="">Username</label>
+    <input type="text" name="" id="Username" placeholder="Username"> <br> <br>
+
+    <label for="">Password</label>
+    <input type="password" name="" id="password" placeholder="Password"> <br> <br>
+    
+    <label for="">Email</label>
+    
+    <input type="email" name="" id="email" placeholder="Email"> <br> <br>
+    <button id ="Singbtn">Sign Up</button>
+  </div>
+<br><br><br><br>
+    
+<div class="asd">
+    <label for="">Username</label>
+    <input type="text" name="" id="loginUsername" placeholder="Username"> <br> <br>
+
+    <label for="">Password</label>
+    <input type="password" name="" id="loginpassword" placeholder="Password"> <br> <br>
+
+    <label for="">Email</label>
+    <input type="email" name="" id="loginemail" placeholder="Email"> <br> <br>
+
+    <button id ="login">Login</button>
+
+</div>
+
+    <script>
+    document.getElementById("Singbtn").addEventListener('click',() => {
+        let UserName = document.getElementById("Username").value;
+        let Password = document.getElementById("password").value;
+        let Email = document.getElementById("email").value;
+
+        localStorage.setItem("UserName",UserName)
+        localStorage.setItem("Password",Password)
+        localStorage.setItem("Email",Email)
+    })
+
+
+    document.getElementById("login").addEventListener("click",() => {
+        let localuser = localStorage.getItem("UserName")
+        let localpass = localStorage.getItem("Password")
+        let localemail = localStorage.getItem("Email")
+
+
+        let UserName = document.getElementById("loginUsername").value;
+        let Password = document.getElementById("loginpassword").value;
+        let Email = document.getElementById("loginemail").value;
+
+
+        if(localuser == UserName && localpass == Password && localemail == Email ){
+            alert ("Successfully Login By ")
+        } else{
+            alert ("Failled To Login")
+        }
+
+
+    })
+    
+    </script>
+    
+</body>
+</html>
